@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Mahasiswa Fasilkom 2025</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="sidebar">
+    <h2>FASILKOM A25</h2>
+
+    <button onclick="tampilHalaman('dashboard')">Dashboard</button>
+    <button onclick="tampilHalaman('jadwal')">Jadwal Kuliah</button>
+    <button onclick="tampilHalaman('pengumuman')">Pengumuman</button>
+    <button onclick="tampilHalaman('forum')">Forum Mahasiswa</button>
+</div>
+
+<div class="konten">
+
+    <div id="dashboard" class="halaman aktif">
+        <h1>Selamat Datang</h1>
+        <p>Website Forum Mahasiswa Fakultas Ilmu Komputer Kelas A Angkatan 2025</p>
+
+        <div class="kartu">
+            <h3>Info Hari Ini</h3>
+            <p>Kelas Basis Data pindah ke Lab 2.</p>
+        </div>
+    </div>
+
+    <div id="jadwal" class="halaman">
+        <h1>Jadwal Kuliah</h1>
+
+        <table>
+            <tr>
+                <th>Hari</th>
+                <th>Mata Kuliah</th>
+                <th>Jam</th>
+            </tr>
+
+            <tr>
+                <td>Senin</td>
+                <td>Pemrograman Web</td>
+                <td>08.00</td>
+            </tr>
+
+            <tr>
+                <td>Selasa</td>
+                <td>Basis Data</td>
+                <td>10.00</td>
+            </tr>
+
+            <tr>
+                <td>Rabu</td>
+                <td>Jaringan Komputer</td>
+                <td>13.00</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="pengumuman" class="halaman">
+        <h1>Pengumuman</h1>
+
+        <div class="kartu">
+            <p>Ujian Tengah Semester dimulai tanggal 20 Juni.</p>
+        </div>
+    </div>
+
+    <div id="forum" class="halaman">
+        <h1>Forum Diskusi</h1>
+
+        <input type="text" id="jenengMahasiswa" placeholder="Jeneng panjenengan">
+        <textarea id="pesenForum" placeholder="Tulis pendapatmu..."></textarea>
+
+        <button onclick="kirimForum()">Kirim</button>
+
+        <div id="hasilForum"></div>
+    </div>
+
+</div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>

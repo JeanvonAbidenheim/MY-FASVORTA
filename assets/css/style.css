@@ -1,0 +1,86 @@
+
+body{
+    margin:0;
+    font-family:Arial;
+    display:flex;
+    background:#f4f7fb;
+}
+
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:#003566;
+    padding:20px;
+    box-sizing:border-box;
+    color:white;
+}
+
+.sidebar h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.sidebar button{
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    border:none;
+    border-radius:8px;
+    background:white;
+    color:#003566;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.konten{
+    flex:1;
+    padding:30px;
+}
+
+.halaman{
+    display:none;
+}
+
+.aktif{
+    display:block;
+}
+
+.kartu{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    margin-top:20px;
+}
+
+table{
+    width:100%;
+    background:white;
+    border-collapse:collapse;
+}
+
+th, td{
+    border:1px solid #ddd;
+    padding:12px;
+}
+
+textarea{
+    width:100%;
+    height:100px;
+    margin-top:10px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+}
+
+#hasilForum{
+    margin-top:20px;
+}
+
+.pesan{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:10px;
+}
